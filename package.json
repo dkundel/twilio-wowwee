@@ -6,7 +6,13 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "wowweemip": "^1.0.2"
+    "wowweemip": "^1.0.2",
+    "snyk": "^1.69.0"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
