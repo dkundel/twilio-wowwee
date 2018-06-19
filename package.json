@@ -7,12 +7,13 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "wowweemip": "^1.0.2",
-    "snyk": "^1.69.0"
+    "snyk": "^1.83.0"
   },
   "private": true,
   "scripts": {
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "snyk": true
 }
